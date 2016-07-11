@@ -1,0 +1,124 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.wrapInner {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.headerBlock p {
+	float: left;
+	font-family: arial;
+}
+
+.headerBlock p a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+
+.headerContent {
+	float: right;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.headerContent ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.headerContent ul li {
+	float: left;
+	margin-right: 30px;
+}
+
+.headerContent ul li:last-child {
+	margin-right: 0;
+}
+
+.headerContent ul li a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	font-family: arial;
+}
+
+.headerBlock {
+	padding: 50px 0 20px 0;
+}
+
+.sectionArea01 {
+	background: url(../images/background03.jpg) no-repeat;
+	height: 780px;
+	background-size: 100%;
+}
+
+.sectionBlock01 {
+	display: table;
+	width: 100%;
+	height: 780px;
+}
+
+.sectionContent01 {
+	color: #fff;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.sectionContent01 p:first-child {
+	font-size: 50px;
+	font-family: font;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+
+
+@font-face {
+	font-family: font;
+	src: url('../fonts/earthorbiterxtrabold.ttf');
+}
+
+@media (max-width: 640px) {
+	.sectionArea01 {
+		background: #000;
+		height: auto;
+	}
+	
+	.wrapInner {
+		width: auto;
+	}
+	.sectionBlock01 {
+		display: table;
+		width: 100%;
+		height: auto;
+		padding: 150px 0;
+	}
+	
+	.headerBlock {
+		padding: 30px 20px 20px 20px;
+	}
+	
+	.sectionContent01 p:first-child {
+		font-size: 25px;
+		padding: 0 20px;
+	}
+}
