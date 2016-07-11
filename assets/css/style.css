@@ -90,6 +90,10 @@ header {
 	margin-bottom: 10px;
 }
 
+.sectionContent01 p:last-child {
+	font-size: 30px;
+	font-family: arial;
+}
 
 
 @font-face {
@@ -120,5 +124,10 @@ header {
 	.sectionContent01 p:first-child {
 		font-size: 25px;
 		padding: 0 20px;
+	}
+	
+	.sectionContent01 p:last-child {
+		font-size: 20px;
+		font-family: arial;
 	}
 }
