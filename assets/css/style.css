@@ -99,7 +99,7 @@ header {
 	src: url('../fonts/earthorbiterxtrabold.ttf');
 }
 
-@media (max-width: 640px) {
+@media (max-width: 480px) {
 	.sectionArea01 {
 		background-position: center center;
 	}
@@ -125,5 +125,65 @@ header {
 	.sectionContent01 p:last-child {
 		font-size: 20px;
 		font-family: arial;
+	}
+}
+
+@media (max-width: 1200px) {
+	
+	.sectionArea01 {
+		background-position: center center;
+	}
+
+	.wrapInner {
+		width: auto;
+	}
+	
+	.sectionContent01 p:first-child {
+		font-size: 25px;
+		padding: 0 20px;
+	}
+	
+	.headerBlock {
+		padding: 30px 20px 20px 20px;
+	}
+}
+
+@media (max-width: 990px) {
+
+	.sectionArea01 {
+		background-position: center center;
+	}
+
+	.wrapInner {
+		width: auto;
+	}
+	
+	.sectionContent01 p:first-child {
+		font-size: 25px;
+		padding: 0 20px;
+	}
+	.headerBlock {
+		padding: 30px 20px 20px 20px;
+	}
+	
+}
+
+@media (max-width: 767px) {
+
+	.sectionArea01 {
+		background-position: center center;
+	}
+
+	.wrapInner {
+		width: auto;
+	}
+	
+	.sectionContent01 p:first-child {
+		font-size: 25px;
+		padding: 0 20px;
+	}
+	
+	.headerBlock {
+		padding: 30px 20px 20px 20px;
 	}
 }
