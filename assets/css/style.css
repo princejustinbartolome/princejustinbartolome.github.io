@@ -101,8 +101,7 @@ header {
 
 @media (max-width: 640px) {
 	.sectionArea01 {
-		background: #000;
-		height: auto;
+		background-position: center center;
 	}
 	
 	.wrapInner {
