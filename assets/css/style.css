@@ -66,14 +66,12 @@ header {
 
 .sectionArea01 {
 	background: url(../images/background03.jpg) no-repeat;
-	height: 780px;
-	background-size: 100%;
+	background-size: cover;
 }
 
 .sectionBlock01 {
 	display: table;
 	width: 100%;
-	height: 780px;
 }
 
 .sectionContent01 {
@@ -114,7 +112,6 @@ header {
 		display: table;
 		width: 100%;
 		height: auto;
-		padding: 150px 0;
 	}
 	
 	.headerBlock {
