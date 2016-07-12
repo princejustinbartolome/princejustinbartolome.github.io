@@ -61,7 +61,7 @@ header {
 }
 
 .headerBlock {
-	padding: 50px 0 20px 0;
+	padding: 50px 20px 20px 20px;
 }
 
 .sectionArea01 {
@@ -86,6 +86,7 @@ header {
 	font-family: font;
 	font-weight: bold;
 	margin-bottom: 10px;
+	transition: 0.4s;
 }
 
 .sectionContent01 p:last-child {
@@ -126,6 +127,11 @@ header {
 		font-size: 20px;
 		font-family: arial;
 	}
+	
+	.sectionContent01 p:last-child {
+		font-size: 15px;
+		font-family: arial;
+	}
 }
 
 @media (max-width: 1200px) {
@@ -139,12 +145,17 @@ header {
 	}
 	
 	.sectionContent01 p:first-child {
-		font-size: 25px;
+		font-size: 40px;
 		padding: 0 20px;
 	}
 	
 	.headerBlock {
-		padding: 30px 20px 20px 20px;
+		padding: 50px 20px 20px 20px;
+	}
+	
+	.sectionContent01 p:last-child {
+		font-size: 30px;
+		font-family: arial;
 	}
 }
 
@@ -159,11 +170,16 @@ header {
 	}
 	
 	.sectionContent01 p:first-child {
-		font-size: 25px;
+		font-size: 30px;
 		padding: 0 20px;
 	}
 	.headerBlock {
-		padding: 30px 20px 20px 20px;
+		padding: 50px 20px 20px 20px;
+	}
+	
+	.sectionContent01 p:last-child {
+		font-size: 25px;
+		font-family: arial;
 	}
 	
 }
@@ -178,7 +194,13 @@ header {
 		width: auto;
 	}
 	
+	.sectionContent01 p:last-child {
+		font-size: 20px;
+		font-family: arial;
+	}
+	
 	.sectionContent01 p:first-child {
+
 		font-size: 25px;
 		padding: 0 20px;
 	}
