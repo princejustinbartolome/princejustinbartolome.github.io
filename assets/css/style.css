@@ -7,7 +7,11 @@
 	font-family: font;
 	src: url('../fonts/earthorbiterxtrabold.ttf');
 }
-
+.clearfix:after {
+	display: table;
+	clear: both;
+	content: "";
+}
 header {
 	position: absolute;
 	top: 0;
@@ -23,8 +27,8 @@ header {
 }
 
 .headerBlock p {
-	float: left;
 	font-family: arial;
+	text-align: center
 }
 
 .headerBlock p a {
@@ -33,41 +37,51 @@ header {
 	text-decoration: none;
 }
 
-.headerContent {
-	float: right;
+.navBlock {
+	background-color: rgba(126, 35, 50,0.5);
 }
 
-.clearfix:after {
-	content: "";
-	display: table;
-	clear: both;
+.navBlock {
+	text-align: center;
 }
 
-.headerContent ul {
-	padding: 0;
-	margin: 0;
+.navBlock ul li {
+	display: inline-block;
 	list-style: none;
 }
 
-.headerContent ul li {
-	float: left;
-	margin-right: 30px;
-}
-
-.headerContent ul li:last-child {
-	margin-right: 0;
-}
-
-.headerContent ul li a {
-	display: block;
+.navBlock ul li a {
 	color: #fff;
 	text-decoration: none;
-	font-family: arial;
+	font-family: font;
+	font-size: 25px;
+	padding: 15px 10px;
+	display: block;
+	z-index: 99;
+	transition: 0.5s;
+}
+.navBlock {
+	position: relative;
+	display: none;
+	z-index: 2;
+}
+.toggleArea {
+	padding: 20px;
+	position: relative;
+	z-index: 1;
+}
+.toggleArea p i {
+	color: #fff;
 }
 
-.headerBlock {
-	padding: 50px 20px 20px 20px;
+.toggleArea p i:hover {
+	cursor: pointer;
 }
+/*
+.headerBlock {
+	padding: 30px 20px 20px 20px;
+}
+*/
 
 .sectionArea01 {
 	background: url(../images/background03.jpg) no-repeat;
@@ -94,9 +108,16 @@ header {
 	transition: 0.4s;
 }
 
+.sectionContent01 p:nth-child(2) {
+	font-size: 40px;
+	font-family: font;
+	transition: 0.4s;
+}
+
 .sectionContent01 p:last-child {
 	font-size: 30px;
 	font-family: font;
+	transition: 0.4s;
 }
 
 @media (max-width: 1200px) {
@@ -115,13 +136,23 @@ header {
 		padding: 0 20px 20px 20px;
 	}
 	
+	
+	
+/*
 	.headerBlock {
-		padding: 50px 20px 20px 20px;
+		padding: 20px 20px 20px 20px;
 	}
 	
+*/
 	.sectionContent01 p:last-child {
+		font-size: 20px;
+		font-family: font;
+	}
+	
+	.sectionContent01 p:nth-child(2) {
 		font-size: 30px;
 		font-family: font;
+		transition: 0.4s;
 	}
 	
 	.sectionContent01 p:first-child {
@@ -152,14 +183,22 @@ header {
 		margin: 0 auto;
 		transition: 0.5s;
 	}
+/*
 	.headerBlock {
-		padding: 50px 20px 20px 20px;
+		padding: 20px 20px 20px 20px;
 	}
+*/
 	
 	.sectionContent01 p:last-child {
-		font-size: 25px;
+		font-size: 18px;
 		font-family: font;
 
+		transition: 0.4s;
+	}
+	
+	.sectionContent01 p:nth-child(2) {
+		font-size: 25px;
+		font-family: font;
 		transition: 0.4s;
 	}
 	
@@ -171,6 +210,10 @@ header {
 
 		font-size: 25px;
 		padding: 0 20px 20px 20px;
+	}
+	
+	.navBlock ul li a {
+		font-size: 20px;
 	}
 	
 }
@@ -185,11 +228,6 @@ header {
 		width: auto;
 	}
 	
-	.sectionContent01 p:last-child {
-		font-size: 20px;
-		font-family: font;
-		transition: 0.4s;
-	}
 	
 	.sectionContent01 p:first-child {
 
@@ -197,8 +235,14 @@ header {
 		padding: 0 20px 20px 20px;
 	}
 	
+/*
 	.headerBlock {
-		padding: 30px 20px 20px 20px;
+		padding: 20px 20px 20px 20px;
+	}
+*/
+	
+	.navBlock ul li a {
+		font-size: 15px;
 	}
 }
 
@@ -215,21 +259,30 @@ header {
 		width: 100%;
 		height: auto;
 	}
+/*
 
 	.headerBlock {
-		padding: 30px 20px 20px 20px;
+		padding: 20px 20px 20px 20px;
 	}
+*/
 
 	.sectionContent01 p:first-child {
 		font-size: 25px;
 		padding: 0 20px 20px 20px;
 	}
 
-	.sectionContent01 p:last-child {
+	.sectionContent01 p:nth-child(2) {
 		font-size: 15px;
 		font-family: font;
 		transition: 0.4s;
 	}
+	
+	.sectionContent01 p:last-child {
+		font-size: 12px;
+		font-family: font;
+		transition: 0.4s;
+	}
+	
 	.sectionContent01 p:first-child {
 		max-width: 239px;
 		margin: 0 auto;
@@ -239,5 +292,10 @@ header {
 	.sectionContent01 p:first-child img {
 		transition: 0.5s;
 		width: 100%;
+	}
+	
+	.navBlock ul li a {
+		font-size: 12px;
+		padding: 15px 5px;
 	}
 }
