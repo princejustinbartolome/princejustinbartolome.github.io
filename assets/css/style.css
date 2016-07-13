@@ -59,6 +59,34 @@ header {
 	display: block;
 	z-index: 99;
 	transition: 0.5s;
+	position: relative;
+	color: #fff;
+	text-decoration: none;
+}
+
+.navBlock ul li a:hover {
+	color: #fff;
+}
+
+.navBlock ul li a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.navBlock ul li > a:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
 }
 .navBlock {
 	position: relative;
@@ -129,7 +157,20 @@ header {
 body.pace-done .overlayLoading {
 	display: none;
 }
+.sectionArea02,.sectionArea03,.sectionArea04{
+	height: 775px;
+}
+.sectionArea02 {
+	background: red;
+}
 
+.sectionArea03 {
+	background: blue;
+}
+
+.sectionArea04 {
+	background: green;
+}
 .overlayLoading {
 	background: #000;
 	position: fixed;
@@ -154,6 +195,7 @@ body.pace-done .overlayLoading {
 	font-size: 40px;
 	font-family: font;
 	transition: 0.4s;
+	margin-bottom: 10px;
 }
 
 .sectionContent01 p:last-child {
