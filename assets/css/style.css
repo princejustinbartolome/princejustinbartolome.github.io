@@ -38,7 +38,7 @@ header {
 }
 
 .navBlock {
-	background-color: rgba(219, 146, 5,0.5);
+/*	background-color: rgba(255, 255, 255,0.5);*/
 }
 
 .navBlock {
@@ -51,7 +51,7 @@ header {
 }
 
 .navBlock ul li a {
-	color: #fff;
+	color: #db9205;
 	text-decoration: none;
 	font-family: 'Raleway', sans-serif;
 	font-size: 18px;
@@ -75,7 +75,7 @@ header {
 	height: 2px;
 	bottom: 0;
 	left: 0;
-	background-color: #fff;
+	background-color: #db9205;
 	visibility: hidden;
 	-webkit-transform: scaleX(0);
 	transform: scaleX(0);
@@ -112,8 +112,11 @@ header {
 */
 
 .sectionArea01 {
+/*
 	background: url(../images/background03.jpg) no-repeat;
 	background-size: cover;
+*/
+	background-color: #111419;
 }
 
 .sectionBlock01 {
@@ -157,7 +160,7 @@ header {
 body.pace-done .overlayLoading {
 	display: none;
 }
-.sectionArea02,.sectionArea03,.sectionArea04{
+.sectionArea03,.sectionArea04{
 	height: 775px;
 }
 .sectionArea02 {
@@ -205,7 +208,26 @@ body.pace-done .overlayLoading {
 	transition: 0.4s;
 }
 
+.sectionBlock02 > p > img {
+	width: 100px;
+}
 
+.sectionBlock02 > p {
+	text-align: center;
+	padding: 60px 0 30px;
+}
+
+.sectionContent02A p {
+	color: #fff;
+	font-size: 20px;
+	font-family: font;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.sectionContent02A > p > img {
+	width: 200px;
+}
 
 
 
