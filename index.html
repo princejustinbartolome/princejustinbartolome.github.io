@@ -8,7 +8,7 @@
 		<title>PJDB DESIGN</title>
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 		<link rel="stylesheet" href="assets/css/style.css">
-		<link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css">
 	</head>
 
 	<body>
@@ -24,10 +24,10 @@
 			<div class="headerBlock clearfix">
 				<nav class="navArea">
 					<div class="navBlock">
-						<ul class="clearfix">
-							<li><a href="#boom01">ABOUT</a></li>
-							<li><a href="#boom02">SERVICES</a></li>
-							<li><a href="#boom03">PORTFOLIO</a></li>
+						<ul class="navclearfix">
+							<li><a href="#boom01">HOME</a></li>
+							<li><a href="#boom02">ABOUT</a></li>
+							<li><a href="#boom03">WORK</a></li>
 							<li><a href="#boom04">CONTACT</a></li>
 						</ul>
 					</div>
@@ -45,24 +45,26 @@
 					<div class="sectionBlock01">
 						<div class="sectionContent01">
 							<p><img src="/assets/images/logo02.png" alt=""></p>
-							<p>Front - End Developer</p>
-							<p>Prince Justin D. Bartolome</p>
+							<p>Lorem</p>
+							<p>Lorem</p>
 						</div>
 					</div>
 				</div>
 			</section>
 			
+<!--
 			<section class="section sectionArea02" id="boom02">
-				<p><img src="/assets/images/profile_picture_01.png" alt=""></p>
+				<div class="sectionBlock02">
+					<div class="sectionContent02A">
+						<p><img src="/assets/images/profile_picture_01.png" alt=""></p>
+					</div>
+					<div class="sectionContent02B">
+						
+					</div>
+				</div>
 			</section>
-			
-			<section class="section sectionArea03" id="boom03">
+-->
 
-			</section>
-			
-			<section class="section sectionArea04" id="boom04">
-
-			</section>
 			
 			
 			
@@ -76,6 +78,18 @@
 		<script src="/assets/js/jquery-1.11.3.min.js"></script>
 		<script src="/assets/js/custom.js"></script>
 		<script src="/assets/js/pace.js"></script>
+		<script language="javascript">
+			document.onmousedown=disableclick;
+			status="Right Click Disabled";
+			Function disableclick(e)
+			{
+				if(event.button==2)
+				{
+					alert(status);
+					return false;
+				}
+			}
+		</script>
 	</body>
 
 </html>
